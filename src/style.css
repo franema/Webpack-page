@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: url("/img/Random-background.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.title {
+    background-color: rgba(43, 43, 44, 0.356);
+    border: 1px solid rgba(122, 122, 122, 0.438);
+    border-radius: 6px;
+    padding: 2rem;
+    color: rgb(233, 210, 210);
+    font-family: 'Silkscreen', cursive;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 6px;
+    color: rgb(233, 210, 210);
+    font-family: 'Silkscreen', cursive;
+}
+
+#content {
+    padding: 3rem 6rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgba(43, 43, 44, 0.356);
+}
+
+.dishes {
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr;
+    gap: 1rem;
+    font-family: 'Silkscreen', cursive;
+    background-color: rgba(43, 43, 44, 0);
+    overflow: auto;
+    color: rgb(233, 210, 210);
+
+}
+
+.dish {
+    text-align: center;
+    padding: 3rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgba(43, 43, 44, 0.356);
+
+}
+
+ /* Designing for scroll-bar */
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
